@@ -1,0 +1,27 @@
+The code matrix_operations.py offers 2 functions: (1) multiply to multiply two matrices, both of size [n,n] and largest_element to find the largest element in a given matrix of size [n,n].
+
+Both of the provdided functions have bugs. To debug, form a team of 2 members. Each member needs to debug one of the functions on their laptop. As a team, you then need to upload the corrected code to one of the team members github repository.
+
+1) Each member should clone the repository on their laptop with
+$ git clone https://github.com/amberj87/CH603_codes_with_bugs
+This will create a new folder CH603_codes_with_bugs. cd to this folder.
+
+## IMPORTANT STEP
+2) Create a new github repository on one team member's account. Direct the remote origin to this new repository and push to this local repository
+$ git remote set-url origin https:<link to the new github repo>
+$ git remote -v  ## Make sure the path lister is for the newly created github repository
+$ git push -u origin master
+Check if the code is now visible on your newly created github repository
+
+3) Create a new branch on your laptop to debug
+$ git checkout -b debug
+
+4) Each member should choose one of the functions to debug. After debugging and running python3 matrix_operations.py to make sure your function works, commit the changes (git add and git commit)
+
+5) Change back to the master branch (git checkout master)
+
+6) Merge with the debug branch (git merge debug)
+
+7) git pull to resolve conflicts with the code on github repository
+
+8) git push -u origin master to push your code into the repository
